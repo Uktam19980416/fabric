@@ -10,22 +10,22 @@ export const SimilarProducts: FC = () => {
     {
       id: 7,
       title: 'Byzantium',
-      img: byzantium,
+      image: byzantium,
     },
     {
       id: 8,
       title: 'Evening garden',
-      img: eveningGarden,
+      image: eveningGarden,
     },
     {
       id: 9,
       title: 'Feather Marquis',
-      img: featherMarq,
+      image: featherMarq,
     },
     {
       id: 10,
       title: 'Lavender Roses',
-      img: lavender,
+      image: lavender,
     },
   ]
   return (
@@ -42,7 +42,7 @@ export const SimilarProducts: FC = () => {
             >
               <div>
               <img
-                src={item.img}
+                src={item.image}
                 alt={item.title}
                 className="rounded-3xl w-full h-full object-cover"
               />

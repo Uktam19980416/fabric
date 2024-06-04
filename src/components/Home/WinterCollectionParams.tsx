@@ -6,7 +6,7 @@ import { SimilarProducts } from './SimilarProducts'
 interface WinterCollectionProps {
   item: {
     title: string,
-    img: string
+    image: string
   }
 }
 

@@ -26,7 +26,7 @@ export const WinterCollection: FC<WinterCollectionProps> = ({data}) => {
         <div className="grid grid-cols-5 gap-5 max-xl:grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-iphone:grid-cols-1 mt-10">
           {data.map((item) => (
             <Link to={`/${item.title}`} key={item.id} className="relative cursor-pointer">
-              <img src={item.img} alt={item.title} className="w-full h-full rounded-3xl" />
+              <img src={item.image} alt={item.title} className="w-full h-full rounded-3xl" />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-3xl hover:bg-opacity-0 transition-all duration-300">
                 <h2 className="text-3xl text-slate-50 font-bold">{item.title}</h2>
               </div>
