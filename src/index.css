@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#menu-toggle:checked ~ .toggled-bar {
+  left: 0;
+}
+#menu-toggle:checked ~ body {
+  left: 0;
+}

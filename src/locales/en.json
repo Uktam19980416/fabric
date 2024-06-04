@@ -1,0 +1,28 @@
+{
+  "home": {
+    "home": "Home",
+    "collection": "Collection",
+    "about": "About Us",
+    "contact": "Contacts",
+    "mainSofa": "Sofa",
+    "mainCountry": "Bukhara",
+    "mainNatural": "Natural",
+    "mainProduct": "Product",
+    "service": {
+      "shippingTitle": "Free shipping",
+      "shippingText": "Free shipping on all orders",
+      "guaranteeTitle": "Return Guarantee",
+      "guaranteeText": "30 day money back",
+      "supportTitle": "Online support 24/7",
+      "supportText": "Technical support 24/7",
+      "paymentTitle": "Secure payment",
+      "paymentText": "All payment methods accepted"
+    },
+    "info": {
+      "material": "Material quality",
+      "naturalProduct": "Bukhara Natural Product",
+      "naturalProductText": "has been a company that produces cotton fabrics for use all over the world for many years",
+      "btn": "Collection"
+    }
+  }
+}
