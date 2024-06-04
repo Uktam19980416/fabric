@@ -17,52 +17,52 @@ export const SummerCollectionData: FC = () => {
     {
       id: 1,
       title: 'Squares',
-      img: squares
+      image: squares
     },
     {
       id: 2,
       title: 'Ikat',
-      img: ikat
+      image: ikat
     },
     {
       id: 3,
       title: 'Circles',
-      img: circles
+      image: circles
     },
     {
       id: 4,
       title: 'Geometry Blue',
-      img: geomBlue
+      image: geomBlue
     },
     {
       id: 5,
       title: 'Tropical Leaves',
-      img: tropLeaves
+      image: tropLeaves
     },
     {
       id: 6,
       title: 'Bambi',
-      img: bambi
+      image: bambi
     },
     {
       id: 7,
       title: 'Byzantium',
-      img: byzantium
+      image: byzantium
     },
     {
       id: 8,
       title: 'Evening garden',
-      img: eveningGarden
+      image: eveningGarden
     },
     {
       id: 9,
       title: 'Feather Marquis',
-      img: featherMarq
+      image: featherMarq
     },
     {
       id: 10,
       title: 'Lavender Roses',
-      img: lavender
+      image: lavender
     }
   ]
   return (

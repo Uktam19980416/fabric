@@ -15,7 +15,7 @@ export const WinterCollectionParams: FC<WinterCollectionProps> = ({ item }) => {
     <div className="max-xl:px-2">
       <div className="container w-full max-w-[1440px] mx-auto max-sm:px-2 max-sm:w-full mt-20">
         <div className="flex items-center justify-between gap-5">
-          <ZoomedImage img={item.img} />
+          <ZoomedImage img={item.image} />
           <div>
             <h1 className="text-5xl font-bold">{item.title}</h1>
             <table className="border-collapse border border-gray-200 mt-5">
