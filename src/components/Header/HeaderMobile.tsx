@@ -18,11 +18,6 @@ export const HeaderMobile: FC<HeaderProps> = ({ handleLogoClick, logo }) => {
     setChecked(false)
   }
 
-  // const changeLang = (lang: string) => {
-  //   i18n.changeLanguage(lang)
-  //   setChecked(false)
-  // }
-
   return (
     <>
       <div className="hidden max-lg:block max-sm:px-2">

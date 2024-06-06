@@ -1,6 +1,7 @@
 import {FC} from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { NewsParams } from './NewsParams'
+import { useTranslation } from 'react-i18next'
 
 interface NewsDataType {
   id: number
@@ -12,11 +13,12 @@ interface NewsDataType {
 
 export const News: FC<{ datas: NewsDataType[] }> = ({ datas }) => {
   const { id } = useParams<{ id: string }>()
+  const { t } = useTranslation()
 
   if (id) {
     const numericId = parseInt(id, 10)
     const item = datas.find((item) => item.id === numericId)
-    if (!item) return <div>Item not found</div>
+    if (!item) return <div>{t("home.news.notFound")}</div>
     return <NewsParams item={item} />
   }
   
@@ -24,11 +26,11 @@ export const News: FC<{ datas: NewsDataType[] }> = ({ datas }) => {
     <div className="max-xl:px-2 mt-10">
       <div className="container w-full max-w-[1440px] mx-auto max-sm:px-2 max-sm:w-full rounded-3xl mt-10">
         <div className="text-center">
-          <h2 className="font-bold text-5xl">News</h2>
-          <p className="text-slate-700 text-xl font-semibold">Bukhara Natural Product</p>
+          <h2 className="font-bold text-5xl">{t("home.news.title")}</h2>
+          <p className="text-slate-700 text-xl font-semibold">{t("home.news.text")}</p>
         </div>
 
-        <div className="grid grid-cols-3 gap-5 mt-10">
+        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5 mt-10">
           {datas.map((data, index) => (
             <Link to={`/news/${data.id}`} key={index} className="cursor-pointer hover:shadow-custom-hover transition-shadow duration-300 rounded-3xl">
               <div className="w-full">

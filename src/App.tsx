@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Header } from './components/Header/Header'
 import {
   LanguageProvider,
@@ -8,8 +8,13 @@ import {
 import { WinterCollectionData } from './components/Home/WinterCollectionData'
 import { Footer } from './components/Footer/Footer'
 import { NewsData } from './components/Home/NewsData'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function AppContent() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   const { isDarkTheme } = useLanguageContext()
   const Home = lazy(() => import('./pages/Home'))
   const Collection = lazy(() => import('./pages/Collection'))

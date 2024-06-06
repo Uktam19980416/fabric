@@ -1,8 +1,8 @@
-import { CollectionData } from "../components/Collection/CollectionData"
+import { CollectionProducts } from '../components/Collection/CollectionProducts'
 
 const Collection = () => {
   return (
-    <CollectionData />
+    <CollectionProducts />
   )
 }
 

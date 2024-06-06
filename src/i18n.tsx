@@ -5,6 +5,7 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import uzTranslations from './locales/uz.json'
 import enTranslations from './locales/en.json'
 import ruTranslations from './locales/ru.json'
+import plTranslations from './locales/pl.json'
 
 i18n
   .use(Backend)
@@ -22,6 +23,9 @@ i18n
       },
       ru: {
         translation: ruTranslations,
+      },
+      pl: {
+        translation: plTranslations,
       },
     },
     interpolation: {

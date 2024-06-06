@@ -2,6 +2,7 @@ import { FC } from 'react'
 import ZoomedImage from '../ZoomedImage'
 import { FilterComment } from '../FilterComment/FilterComment'
 import { SimilarProducts } from '../SimilarProducts'
+import { useTranslation } from 'react-i18next'
 
 interface AutumnCollectionProps {
   item: {
@@ -11,6 +12,7 @@ interface AutumnCollectionProps {
 }
 
 export const AutumnCollectionParams: FC<AutumnCollectionProps> = ({ item }) => {
+  const { t } = useTranslation()
   return (
     <div className="max-xl:px-2">
       <div className="container w-full max-w-[1440px] mx-auto max-sm:px-2 max-sm:w-full mt-20">
@@ -19,44 +21,54 @@ export const AutumnCollectionParams: FC<AutumnCollectionProps> = ({ item }) => {
           <div>
             <h1 className="text-5xl font-bold">{item.title}</h1>
             <table className="border-collapse border border-gray-200 mt-5">
-              <tbody>
+            <tbody>
                 <tr>
                   <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
-                    Material:
+                    {t('home.gridSofa.eachModule.material')}:
                   </td>
                   <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
-                  100% cotton flannel
+                    {t('home.gridSofa.eachModule.cottonFlannel')}
                   </td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
-                  Pillowcase:
+                    {t('home.gridSofa.eachModule.pillowcase')}:
                   </td>
-                  <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">50x70 cm (2 pcs.)</td>
+                  <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
+                    {t('home.gridSofa.eachModule.size')}
+                  </td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
-                  Bed sheet:
+                    {t('home.gridSofa.eachModule.sheet')}:
                   </td>
-                  <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">260×280 cm (1 piece)</td>
+                  <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
+                    {t('home.gridSofa.eachModule.size2')}
+                  </td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
-                  Duvet cover:
+                    {t('home.gridSofa.eachModule.duvetCover')}:
                   </td>
-                  <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">160x220 cm (2 pcs.)</td>
+                  <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
+                    {t('home.gridSofa.eachModule.size3')}
+                  </td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
-                  Size:
+                    {t('home.gridSofa.eachModule.sizeTitle')}:
                   </td>
-                  <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">Special size</td>
+                  <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
+                    {t('home.gridSofa.eachModule.specialSize')}
+                  </td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
-                  Manufacturer:
+                    {t('home.gridSofa.eachModule.manufacturer')}:
                   </td>
-                  <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">Bukhara Natural Product</td>
+                  <td className="border border-gray-200 px-4 py-4 text-xl font-extralight">
+                    {t('home.gridSofa.eachModule.naturalProduct')}
+                  </td>
                 </tr>
               </tbody>
             </table>

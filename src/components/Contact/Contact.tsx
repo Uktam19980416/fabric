@@ -1,32 +1,34 @@
 import { FC } from 'react'
 import { ContactInfo } from './ContactInfo'
+import { useTranslation } from 'react-i18next'
 
 export const Contact: FC = () => {
+  const { t } = useTranslation()
   return (
     <div className="mt-10">
       <div className="container w-full max-w-[1440px] mx-auto max-sm:px-2 max-sm:w-full rounded-3xl mt-10">
         <div className="flex items-center justify-between gap-5 max-md:flex-col">
           <div className="w-full">
-            <h1 className="text-5xl text-slate-800 font-semibold">Contact</h1>
+            <h1 className="text-5xl text-slate-800 font-semibold">{t("contact.contact")}</h1>
             <form className="w-2/3 max-xl:w-full flex flex-col gap-5 mt-5">
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder={t("contact.email")}
                 className="py-3 pl-5 rounded-full border-2"
               />
               <input
                 type="tel"
-                placeholder="Phone Number"
+                placeholder={t("contact.phoneNumber")}
                 className="py-3 pl-5 rounded-full border-2"
               />
               <textarea
-                placeholder="Your Message Here"
+                placeholder={t("contact.textarea")}
                 className="py-3 pl-5 rounded-xl border-2"
                 rows={10}
               ></textarea>
               <div className="flex justify-end">
                 <button className="w-fit py-2 px-5 bg-orange-600 rounded-full text-slate-50 hover:bg-slate-50 hover:text-orange-600 transition-all hover:border-2 hover:border-orange-600">
-                  Send
+                {t("contact.btn")}
                 </button>
               </div>
             </form>

@@ -11,60 +11,63 @@ import eveningGarden from '../../assets/images/diz-66-scaled-370x278.jpg'
 import featherMarq from '../../assets/images/diz-65-scaled-370x278.jpg'
 import lavender from '../../assets/images/diz-64-scaled-370x278.jpg'
 import { WinterCollection } from './WinterCollection'
+import { useTranslation } from 'react-i18next'
 
 export const WinterCollectionData: FC = () => {
-  const data: WinterCollectionDataType[] = [
-    {
-      id: 1,
-      title: 'Squares',
-      image: squares
-    },
-    {
-      id: 2,
-      title: 'Ikat',
-      image: ikat
-    },
-    {
-      id: 3,
-      title: 'Circles',
-      image: circles
-    },
-    {
-      id: 4,
-      title: 'Geometry Blue',
-      image: geomBlue
-    },
-    {
-      id: 5,
-      title: 'Tropical Leaves',
-      image: tropLeaves
-    },
-    {
-      id: 6,
-      title: 'Bambi',
-      image: bambi
-    },
-    {
-      id: 7,
-      title: 'Byzantium',
-      image: byzantium
-    },
-    {
-      id: 8,
-      title: 'Evening garden',
-      image: eveningGarden
-    },
-    {
-      id: 9,
-      title: 'Feather Marquis',
-      image: featherMarq
-    },
-    {
-      id: 10,
-      title: 'Lavender Roses',
-      image: lavender
-    }
-  ]
+  const { t } = useTranslation();
+
+const data: WinterCollectionDataType[] = [
+  {
+    id: 1,
+    title: t('home.gridSofa.square'),
+    image: squares
+  },
+  {
+    id: 2,
+    title: t('home.gridSofa.ikat'),
+    image: ikat
+  },
+  {
+    id: 3,
+    title: t('home.gridSofa.circles'),
+    image: circles
+  },
+  {
+    id: 4,
+    title: t('home.gridSofa.geomBlue'),
+    image: geomBlue
+  },
+  {
+    id: 5,
+    title: t('home.gridSofa.tropLeaves'),
+    image: tropLeaves
+  },
+  {
+    id: 6,
+    title: t('home.gridSofa.bambi'),
+    image: bambi
+  },
+  {
+    id: 7,
+    title: t('home.gridSofa.byzantium'),
+    image: byzantium
+  },
+  {
+    id: 8,
+    title: t('home.gridSofa.eveningGarden'),
+    image: eveningGarden
+  },
+  {
+    id: 9,
+    title: t('home.gridSofa.featherMarq'),
+    image: featherMarq
+  },
+  {
+    id: 10,
+    title: t('home.gridSofa.lavender'),
+    image: lavender
+  }
+];
   return (
     <>
       <WinterCollection data={data} />

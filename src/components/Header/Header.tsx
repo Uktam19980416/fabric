@@ -5,9 +5,11 @@ import { LanguageSelect } from './LanguageSelect'
 import { LightMode } from './LightMode'
 import { HeaderMobile } from './HeaderMobile'
 import {useLanguageContext} from '../../context/LanguageProvider'
+import { useTranslation } from 'react-i18next'
 
 export const Header: FC = () => {
   const [loading, setLoading] = useState(true)
+  const { t } = useTranslation()
 
   const handleLogoClick = () => {
     setLoading(true)
@@ -32,22 +34,22 @@ export const Header: FC = () => {
           </div>
           <div className="flex items-center gap-10">
             <Link to="/" className="text-slate-500 font-semibold text-xl">
-              Home
+            {t('home.home')}
             </Link>
             <Link
               to="/contacts"
               className="text-slate-500 font-semibold text-xl"
             >
-              Contacts
+              {t('home.contact')}
             </Link>
             <Link
               to="/collection"
               className="text-slate-500 font-semibold text-xl"
             >
-              Collection
+              {t('home.collection')}
             </Link>
             <Link to="/about" className="text-slate-500 font-semibold text-xl">
-              About
+            {t('home.about')}
             </Link>
           </div>
           {/* </div> */}

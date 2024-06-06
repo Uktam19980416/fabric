@@ -24,3 +24,8 @@ export interface WinterCollectionDataType {
   title: string
   image: string
 }
+
+export interface OptionType {
+  value: string;
+  label: JSX.Element;
+}
